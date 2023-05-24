@@ -1,0 +1,37 @@
+<body>
+  <div class="">
+    <ul>
+      <li style="color:white; margin-top:15px; margin-left:12px;  font-weight:bolder;">REGISTRATION DETAILS</li>
+      <li style="float:right"><a class="active" href="/login">LOGOUT</a></li>
+      <li style="float:right"><a class="active" href="/adm">ADMINPAGE</a></li>
+      <li style="float:right"><a class="active" href="/vacci">CENTRE_DETAILS</a></li>
+      <li style="float:right"><a class="active" href="/regist">REGISTER</a></li>
+      <li style="float:right"><a class="active" href="/details">REGISTRATION_DETAILS</a></li>
+    </ul>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>PHONE</th>
+      <th>CENTRE</th>
+      <th>VACCINATION TYPE</th>
+      <th>DOSE</th>
+      <th>VACCINATED</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each rows}}
+    <tr>
+      <td>{{this.name}}</td>
+      <td>{{this.phone}}</td>
+      <td>{{this.centre}}</td>
+      <td>{{this.vaccine}}</td>
+      <td>{{this.dose}}</th>
+       <td><a href="/dltuser/?id={{this.id}}"onclick="return confirm('ARE YOU SURE')" class="clk" id="dltt" >DELETE</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
+</body>

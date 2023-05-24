@@ -1,0 +1,132 @@
+#home{
+    background-image: url("/image/covid bg.webp");
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.split {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 30%;
+    left: 0;
+  }
+  
+ 
+  .right {
+    padding-left: 10px;
+    right: 0;
+    width: 60%;
+    background-color: #fff;
+    margin: 5px 5px 5px 5px;
+    height: 95%;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    border-radius: 10px
+  }
+
+  #head{
+    color: #fff;
+    position: absolute;
+    left: 20vw;
+    top:19vh;
+    font-size: xx-large;
+  }
+  #h2-lib{
+    float: left;
+  } 
+  #admin{
+    float: right;
+  }
+  li {
+    display: inline;
+  }
+
+  ul {
+    background-color: #dddddd;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+  }
+  q{
+    color:white;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-left:20px;
+    text-align: center;
+  }
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  li a:hover {
+    background-color: skyblue;
+  }
+  .active {
+    background-color: darkblue;
+  }
+  #covid-btn:hover{
+    cursor: pointer;
+  }
+  #covid-btn{
+    background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+    border-radius: 14px;
+    border: none;
+    height: 35px;
+    width: 170px;
+    padding: 8px;
+    align-items: center;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  #big-div{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+  }
+  #float{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8vw;
+   
+  }
+
+  #s1{
+    padding: 20px;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 10px #cbced1;
+    margin-top: 200px;
+    
+  }
+  

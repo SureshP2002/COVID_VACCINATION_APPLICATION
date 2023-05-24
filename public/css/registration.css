@@ -1,0 +1,62 @@
+#regbg{
+   
+    
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+        margin:250px,auto;
+        padding:10px 10px 30px;
+       
+}
+.box{
+    height:550px;
+    width:400px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+     border-radius:10px;
+     padding:30px;
+
+ }
+.left1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 50%;
+    left: 0;
+  }
+
+  .right1 {
+    padding-left: 10px;
+    right: 0;
+    width: 50%;
+    background-color: #fff;
+    margin: 5px 5px 5px 5px;
+    height: 95%;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    border-radius: 10px
+  }
+
+  .form{
+    font-size: 20px;
+}
+
+input,#vaccine{
+   height:35px;
+   width:350px;
+   border-radius:5px;
+   border: none;
+}
+
+.button{
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+font-weight: bold;
+border:none;
+color:white;
+height:35px;
+width:200px;
+display:flex;
+text-align: center;
+justify-content:center ;
+align-items:center;
+margin-left: 85px;
+border-radius: 5px;
+font-weight: bolder;
+}

@@ -1,0 +1,42 @@
+
+<body>
+    <div>
+    <ul>
+      <li style="color:white; margin-top:15px; margin-left:12px;  font-weight:bolder;">VACCINATION CAMP DETAILS</li>
+      <li style="float:right"><a class="active" href="/admin-login">ADMIN</a></li>
+      <li style="float:right"><a class="active" href="/login">LOGIN</a></li>
+      <li style="float:right"><a class="active" href="/signup">SIGNUP</a></li>
+      <li style="float:right"><a class="active" href="/">HOME</a></li>
+    </ul>
+<table  class="table">
+    <thead>
+        <tr>
+            <th>Centre_ID</th>
+            <th>Centre_name</th>
+            <th>Address</th>
+            <th>District</th>
+            <th>Working_hours</th>
+            <th>CovidShield<br>(Available)</th>
+            <th>Covaxin<br>(Available)</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+      
+        {{#each rows}}
+        <tr>
+            <td>{{this.centre_id}}</td>
+            <td>{{this.centre_name}}</td>
+            <td>{{this.address}}</td>
+            <td>{{this.district}}</td>
+            <td>{{this.working_hours}}</td>
+            <td>{{this.covishield}}</td>
+            <td>{{this.covaxin}}</td>
+            
+        </tr>
+        {{/each}}
+       
+    </tbody>
+</table>
+</div>
+</body>

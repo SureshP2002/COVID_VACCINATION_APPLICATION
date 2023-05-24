@@ -1,0 +1,53 @@
+<body id="home">
+   <div class="split left">
+   <q> The vaccines protect you!!!</q>
+   </div>
+  <div class="split right">
+    <ul>
+      <li style="color:white; margin-top:15px; margin-left:12px;  font-weight:bolder; height:40px; ">User Registration</li>
+      <li style="float:right"><a class="active" href="/admin-login">ADMIN</a></li>
+      <li style="float:right"><a class="active" href="/login">LOGIN</a></li>
+      <li style="float:right"><a class="active" href="/signup">SIGNUP</a></li>
+      <li style="float:right"><a class="active" href="/">HOME</a></li>
+    </ul>
+  <div class="wrapper">
+       
+       <br>
+        <form class="p-3 mt-3" action="/signup" method="POST">
+            <h1 id="head" style="color: #039BE5; margin:30px 0px 0px 30px ">SIGN UP HERE!!</h1>
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="username" id="userName" placeholder="Username" required>
+            </div><div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="text" name="Aadhar_number" id="num" placeholder="Aadhar_number" required>
+            </div>
+             <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="number" name="phn" id="phone" placeholder="Phone_number " required>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="pwd" placeholder="Password" required>
+            </div>
+
+            <br>
+            <button class="btn mt-3">SignUP</button>
+            </form>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Already Have an Account?<a href="/login">&nbsp;LOGIN </a>
+        <br>
+    </div>
+{{#if message}}
+<script>
+    window.onload=function(){
+        alert('{{message}}');
+    };
+</script>
+{{/if}}
+</div>
+</body>

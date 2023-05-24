@@ -1,0 +1,67 @@
+<body id="regbg">
+  <div class="split left1">
+     <div class="box">
+        <h1 style="color :rgb(5, 4, 4)">Enter your Details!!</h1>
+    
+        <div class="form">
+          <form action="/register" method="POST">
+              <input type="text" placeholder="Enter your Name" id="name" name="name" required><br><br>
+              <input type="number"  placeholder="Enter your Age" id="age" name="Age" min="18"> <br><br>
+              <input type="text" id="adhar" name="adhar" placeholder="Enter your Adhar number"><br><br>
+              <input type="text"  id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+              <input type="text"  id="center" name="centre" placeholder="Choose the vaccination center"><br><br>
+              <select name="vaccine" id="vaccine">
+                 <option value="covaxin">Choose the vaccine</option>
+                 <option value="covaxin">Covaxin</option>
+                 <option value="Covishield">Covishield</option>
+              </select><br><br>
+              <select name="dose" id="vaccine">
+                 <option value="1">Choose the dose</option>
+                 <option value="Dose 1">Dose 1</option>
+                 <option value="Dose 2">Dose 2</option>
+             </select><br><br>
+             <a href="/book"><button type="submit" class="button" id="reg">Book the vaccine</button></a>
+          </form> 
+{{#if message}}
+<script>
+    window.onload=function(){
+        alert('{{message}}');
+    };
+</script>
+{{/if}}
+      </div>
+  </div>
+
+  <div class="split right1">
+    <ul>
+       <li style="color:white; margin-top:15px; margin-left:12px;  font-weight:bolder;">VACCINATION CAMP DETAILS</li>
+       <li style="float:right"><a class="active" href="/admin-login">ADMIN</a></li>
+       <li style="float:right"><a class="active" href="/">LOGOUT</a></li>
+       <li style="float:right"><a class="active" href="/regist">REGISTER</a></li>
+       <li style="float:right"><a class="active" href="/">HOME</a></li>
+    </ul>
+  <div id="big-div">
+    <div id="float">
+     <table border="4" class="table" >
+       <thead>
+         <tr>
+            <th>Centre_name</th>
+            <th>District</th>
+            <th>CovidShield<br>(Available)</th>
+            <th>Covaxin<br>(Available)</th>
+         </tr>
+      </thead>
+      <tbody>
+        {{#each row1}}
+          <tr>
+             <td>{{this.centre_name}}</td>
+             <td>{{this.district}}</td>
+             <td>{{this.covishield}}</td>
+             <td>{{this.covaxin}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+</table>
+</div>
+</div>
+  </body>

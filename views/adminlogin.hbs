@@ -1,0 +1,40 @@
+<body id="home">
+  
+ <div class="split left">
+   <q> The vaccines protect you!!!</q>
+ </div>
+<div class="split right">
+    <ul>
+      <li style="color:white; margin-top:15px; margin-left:12px;  font-weight:bolder; height:30px; ">Admin Login</li>
+      <li style="float:right"><a class="active" href="/admin-login">ADMIN</a></li>
+      <li style="float:right"><a class="active" href="/login">LOGIN</a></li>
+      <li style="float:right"><a class="active" href="/signup">SIGNUP</a></li>
+      <li style="float:right"><a class="active" href="/">HOME</a></li>
+    </ul>
+  <div class="wrapper">
+       <h1 id="head" style="color: #039BE5; margin:30px 0px 0px 35px ">LOGIN HERE!!</h1>
+       <br>
+        <form class="p-3 mt-3" action="/adminpage" method="POST">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="username" id="userName" placeholder="Username" required>
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="pwd" placeholder="Password" required>
+            </div>
+            <br>
+                <button class="btn mt-3">Login</button>
+            
+        </form>
+        <br>
+    </div>
+{{#if message}}
+<script>
+    window.onload=function(){
+        alert('{{message}}');
+    };
+</script>
+{{/if}}
+</div>
+</body>

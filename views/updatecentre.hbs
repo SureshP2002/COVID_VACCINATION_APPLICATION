@@ -1,0 +1,29 @@
+
+<body id="regbg">
+   <div class="">
+    <ul>
+      <li style="color:white; margin-top:15px; margin-left:12px;  font-weight:bolder;">UPDATECENTERS</li>
+      <li style="float:right"><a class="active" href="/login">LOGOUT</a></li>
+      <li style="float:right"><a class="active" href="/adm">ADMINPAGE</a></li>
+      <li style="float:right"><a class="active" href="/vacci">CENTRE_DETAILS</a></li>
+      <li style="float:right"><a class="active" href="/regist">REGISTER</a></li>
+      <li style="float:right"><a class="active" href="/details">REGISTRATION_DETAILS</a></li>
+    </ul>
+    <br><br>
+  {{#each rows}}
+    <div class="form box">
+        <h1 style="color:darkblue">ENTER THE DETAILS</h1>
+        <form class="fm"action="/updated" method="POST">
+        <input type="number"id="num" name="id" placeholder="Centre_Id" value="{{this.centre_id}}" readonly><br><br>
+        <input type="text"id="name" name="name" placeholder="Centre Name" value="{{this.centre_name}}" readonly><br><br>
+        <input type="text"  id="addres" name="address"placeholder="ADDRESSS" value="{{this.address}}"readonly> &nbsp; &nbsp; &nbsp;<br><br>
+        <input type="text" id="district" name="district" placeholder="DISTRICT" value="{{this.district}}"><br><br>
+        <input type="text"  id="work" name="worktime" placeholder="WORKINGTIME" value="{{this.working_hours}}" required><br><br>
+        <input type="number"  id="center" name="covishield" placeholder="Covishield(per day)" value="{{this.covishield}}" required><br><br>
+        <input type="number"  id="center" name="covaxin" placeholder="Covaxin(per day)" value="{{this.covaxin}}" required><br><br>
+        <a href=""><input style="background-color:rgb(4, 0, 255);color:white"type="submit" name="" id="" value="SUBMIT"></a>
+        </form>
+  {{/each}}
+</div>
+</div>
+</body>

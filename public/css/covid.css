@@ -1,0 +1,29 @@
+body{
+    margin:20px;
+}
+
+#covid{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+    height:300px;
+    border-radius: 5%;
+}
+h1{
+    text-align: left;
+    color:maroon;
+}
+#ul{
+    color:black;
+    background-color: white;
+    align-items: center;
+    
+}
+li{
+    list-style-type: circle;
+}
+
+h2{
+    color:maroon;
+}

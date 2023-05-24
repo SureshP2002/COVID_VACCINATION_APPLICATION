@@ -1,0 +1,98 @@
+.table {
+  width:100%;
+  max-width: 800px;
+  margin: 100px auto;
+  border-collapse: collapse;
+  border: 1px solid rgb(18, 16, 14);
+
+
+  }
+  
+ .table th,.table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #4f1e1e;
+    border: 2px solid black;
+  }
+  
+  .table th {
+    background-color: #277a93;
+    color: #f2eded;
+
+  }
+  
+ .table  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #f5f5f5;
+  }
+   .tt a{
+    text-align: centre;
+    margin: 320px;
+  }
+  .table .tt{
+    background-color: red;
+  }
+  .table td a{
+    text-decoration: none;
+    
+  }
+  #dltt{
+    color: red;
+  }
+ .clkk{
+color: green;
+font-size: 28px
+ }
+  .p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  .c:hover{
+    background-color: rgb(255, 0, 123);
+  }
+  .c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  }
+  
+  .link {
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    
+  }
+  .link:hover{
+    color: red;
+  }
+  .form{
+  
+    width: fit-content;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 10px;
+
+    
+  }
+
+  .fm{
+    align-items: center;
+    margin-left: 25px;
+  }
+ 
+  
+  
+  

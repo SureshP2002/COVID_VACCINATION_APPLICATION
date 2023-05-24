@@ -1,0 +1,46 @@
+<body>
+  <div class="">
+    <ul>
+       <li style="color:white; margin-top:15px; margin-left:12px;  font-weight:bolder;">CENTERS</li>
+       <li style="float:right"><a class="active" href="/login">LOGOUT</a></li>
+       <li style="float:right"><a class="active" href="/adm">ADMINPAGE</a></li>
+       <li style="float:right"><a class="active" href="/vacci">CENTRE_DETAILS</a></li>
+       <li style="float:right"><a class="active" href="/regist">REGISTER</a></li>
+       <li style="float:right"><a class="active" href="/details">REGISTRATION_DETAILS</a></li>
+    </ul>
+
+  <table class="table">
+    <thead>
+        <tr>
+            <th>Centre_ID</th>
+            <th>Centre_name</th>
+            <th>Address</th>
+            <th>District</th>
+            <th>Working_hours</th>
+            <th>CovidShield<br>(Available)</th>
+            <th>Covaxin<br>(Available)</th>
+            <th>DELETE</th>
+            <th>UPDATE</th>
+         </tr>
+    </thead>
+   <tbody >
+       {{#each rows}}
+        <tr>
+            <td>{{this.centre_id}}</td>
+            <td>{{this.centre_name}}</td>
+            <td>{{this.address}}</td>
+            <td>{{this.district}}</td>
+            <td>{{this.working_hours}}</td>
+            <td>{{this.covishield}}</td>
+            <td>{{this.covaxin}}</td>
+            <td><a href="/dltcentre/?id={{this.centre_id}}"onclick="return confirm('ARE YOU SURE')" id="dltt"class="clk">DELETE</a></td>
+            <td><a href="/uptcentre/?id={{this.centre_id}}"  class="clk">UPDATE</a></td>
+        </tr>
+        {{/each}}
+        <tr class="tt">
+            <td colspan="9"><a href="/addcentre" class="clkk">ADD NEW CENTRE</a></td>
+        </tr>
+       
+</table>
+</div>
+</body>
