@@ -13,15 +13,19 @@
   1.COVID-19 Awareness:
         Contains user awarness information regarding covid - 19.
         Covid - 19 symptoms and dosage details
+        
   2.Vaccination details page : 
         Users can view available slots at vaccination centres and working hours with  detailed addressing
+        
   3.Vaccine registration:
          Users can create an account and log in to access the system.
          User authentication is implemented to ensure secure access.
          Users can book the vaccines by filling the details after login or signing up  to their account
+         
   4.Admin Dashboard:
          An admin dashboard is available to manage vaccination centres and  appointments.
          Admins can add new centres, update centre information, and track appointment statistics and delete the centres
+         
   5.Dosage details :
          Admins can view the dosage details at each centre and can delete the user registration details once they get vaccinated.
 
